@@ -1,6 +1,6 @@
 
-Kafka Tools - A way to test and manage Kafka Brokers and Clusters
-=================================================================
+Kafka Toolchest - A way to test and manage Kafka Brokers and Clusters
+=====================================================================
 
 Kafka Tools is a suite of tools to help test that your Kafka Cluster is fit for purpose
 Also, this has validation scripts that help us validate we have data coming into Kafka.
