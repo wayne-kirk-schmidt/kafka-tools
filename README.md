@@ -46,15 +46,15 @@ Scripts and Functions:
 
 ```
 bin
-├── kafka_consumer_test.py
-├── kafka_producer_test.py
-└── syslog_parser_validator.py
+├── kafka_reader.py
+├── kafka_writer.py
+└── syslog_parse.py
 ```
-* kafka_consumer_test.py is a basic consumer of Kafka messages. This will print summary or details
+* kafka_reader.py is a basic consumer of Kafka messages. This will print summary or details
 
-* kafka_producer_test.py this is a basic message creator that can be used as both unit test and load test
+* kafka_writer.py is a basic message creator that can be used as both unit test and load test
 
-* syslog_parser_validator.py this validates the number of syslog messages, and computes a histogram of the data sizes
+* syslog_parse.py validates the number of syslog messages, and computes a histogram of the data sizes
 
 To Do List:
 ===========
