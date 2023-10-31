@@ -1,21 +1,22 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# pylint: disable=no-name-in-module
+
 """
 Explanation:
 
     This script is a wrapper for a kafka producer.
-    Other scripts will be built to consume messages,
-    and manage messages.
+    Other scripts will be built to consume messages, and manage messages.
 
 Usage:
-    $ python  kafka-producer-test [ options ]
+    $ python  kafka_writer [ options ]
 
 Style:
     Google Python Style Guide:
     http://google.github.io/styleguide/pyguide.html
 
-    @name           kafka_producer_test
+    @name           kafka_writer
     @version        1.0.0
     @author-name    Wayne Schmidt
     @author-email   wayne.kirk.schmidt@changeis.co.jp
@@ -30,8 +31,8 @@ import sys
 import datetime
 import time
 import json
-import kafka
 
+from kafka import KafkaProducer
 
 def get_timestamp():
     """
@@ -40,7 +41,7 @@ def get_timestamp():
     right_now = datetime.datetime.now()
     return right_now.strftime('%Y-%m-%d %H:%M:%S')
 
-producer = kafka.KafkaProducer(
+producer = KafkaProducer(
                  bootstrap_servers=['localhost:9092'],
                  value_serializer=lambda x:
                  json.dumps(x).encode('utf-8')

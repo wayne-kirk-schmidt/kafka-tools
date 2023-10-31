@@ -1,19 +1,21 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+#pylint: disable=C0301
+
 """
 Explanation:
 
     This checks to see how many messages and how many can be parsed
 
 Usage:
-    $ python3 syslog_parser_validator [ file ]
+    $ python3 syslog_parser [ file ]
 
 Style:
     Google Python Style Guide:
     http://google.github.io/styleguide/pyguide.html
 
-    @name           syslog_parser_validator
+    @name           syslog_parser
     @version        1.0.0
     @author-name    Wayne Schmidt
     @author-email   wayne.kirk.schmidt@changeis.co.jp
